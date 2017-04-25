@@ -56,6 +56,8 @@ public class Ventana extends javax.swing.JFrame {
         salirButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Devoluciones del cliente");
+        setIconImages(null);
 
         devolucionesLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         devolucionesLabel.setText("Devoluciones del cliente");
@@ -136,6 +138,7 @@ public class Ventana extends javax.swing.JFrame {
         jTable1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null},
                 {null, null, null, null, null}
             },
             new String [] {
