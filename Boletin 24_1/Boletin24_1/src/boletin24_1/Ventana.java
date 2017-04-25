@@ -69,15 +69,20 @@ public class Ventana extends javax.swing.JFrame {
 
         confirmLabel.setText("Confirm:");
 
+        userIDField.setEditable(false);
+        userIDField.setText("{automatic}");
         userIDField.setName("(automatic)"); // NOI18N
 
         cancelButton.setText("Cancel");
 
         okButton.setText("OK");
 
-        groupBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "staff", "Item 2", "Item 3", "Item 4" }));
+        groupBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "staff" }));
 
-        loginShellBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "/bin/ksh", "Item 2", "Item 3", "Item 4" }));
+        homeDirectoryField.setEditable(false);
+        homeDirectoryField.setText("{automatic}");
+
+        loginShellBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "/bin/ksh" }));
 
         jPasswordField1.setText("jPasswordField1");
 

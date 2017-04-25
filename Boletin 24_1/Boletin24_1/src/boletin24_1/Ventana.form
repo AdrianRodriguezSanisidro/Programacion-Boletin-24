@@ -238,6 +238,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="userIDField">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="text" type="java.lang.String" value="{automatic}"/>
             <Property name="name" type="java.lang.String" value="(automatic)" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -259,8 +261,10 @@
         </Component>
         <Component class="javax.swing.JComboBox" name="groupBox">
           <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;staff&quot;, &quot;Item 2&quot;, &quot;Item 3&quot;, &quot;Item 4&quot; })" type="code"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="1">
+                <StringItem index="0" value="staff"/>
+              </StringArray>
             </Property>
           </Properties>
           <AuxValues>
@@ -268,11 +272,17 @@
           </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="homeDirectoryField">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="text" type="java.lang.String" value="{automatic}"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="loginShellBox">
           <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;/bin/ksh&quot;, &quot;Item 2&quot;, &quot;Item 3&quot;, &quot;Item 4&quot; })" type="code"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="1">
+                <StringItem index="0" value="/bin/ksh"/>
+              </StringArray>
             </Property>
           </Properties>
           <AuxValues>
