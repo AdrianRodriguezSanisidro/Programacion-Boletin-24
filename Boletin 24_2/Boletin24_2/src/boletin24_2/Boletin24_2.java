@@ -7,7 +7,8 @@ package boletin24_2;
 public class Boletin24_2 {
 
     public static void main(String[] args) {
-        
+        Ventana objVen=new Ventana();
+        objVen.setVisible(true);
     }
     
 }
